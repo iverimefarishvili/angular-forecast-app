@@ -1,0 +1,64 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .box-content {
+    width: 500px;
+    height: 500px;
+    background-color: #001f3f;
+    box-shadow: 0 6px 4px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 8px;
+    .primary-info {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      .weather-img {
+        width: 110px;
+        margin: 20px;
+      }
+      .country-code {
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        margin: 5px;
+      }
+      .temperature {
+        font-size: 22px;
+        font-family: sans-serif;
+        color: #5E878B;
+        font-weight: bold;
+        margin: 5px;
+      }
+    }
+    .additional-info {
+      display: flex;
+      justify-content: space-between;
+      .pressure {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin: 40px;
+        font-family: sans-serif;
+        div{
+          display: flex;
+          align-items: center;
+          img {
+            margin-right: 10px;
+          }
+        }
+      }
+      .date{
+        margin: 40px;
+        color: white;
+        font-family: sans-serif;
+        .weekday {
+          font-size: 21px;
+        }
+        .new-date {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
